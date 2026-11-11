@@ -88,7 +88,7 @@ int main()
         }
         else
         {
-            cout << "Klaida: Tokios valiutos pasirinkimo nėra.\n";
+            cout << "\nKlaida: Tokios valiutos pasirinkimo nėra.\n";
             continue;
         }
 
@@ -121,7 +121,6 @@ int main()
         else
 
         {
-           
             cout << "Iveskite suma "
                  << (veiksmas == 2 ? "EUR" : valiutosPavadinimas)
                  << ": ";
@@ -184,11 +183,11 @@ int main()
                 rezultatas = suma / kursas;
 
               
-                cout << suma << " " << valiutosPavadinimas
+                cout << "suma" << " " << valiutosPavadinimas
                      << " -> " << rezultatas << " EUR\n";
             }
         }
-        cout << "Paspauskite Enter, kad griztumete i pagrindini meniu...";
+        cout << "\nPaspauskite Enter, kad griztumete i pagrindini meniu...";
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin.get();
 
